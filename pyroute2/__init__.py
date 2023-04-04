@@ -32,6 +32,7 @@ from pyroute2.iwutil import IW
 from pyroute2.ndb.main import NDB
 from pyroute2.ndb.noipdb import NoIPDB
 from pyroute2.netlink.connector.cn_proc import ProcEventSocket
+from pyroute2.netlink.connector.cn_w1 import W1EventSocket
 from pyroute2.netlink.devlink import DevlinkSocket
 from pyroute2.netlink.diag import DiagSocket, ss2
 from pyroute2.netlink.event.acpi_event import AcpiEventSocket
@@ -104,6 +105,7 @@ modules = [
     ss2,
     TaskStats,
     UeventSocket,
+    W1EventSocket,
     WireGuard,
     WiSet,
 ]
